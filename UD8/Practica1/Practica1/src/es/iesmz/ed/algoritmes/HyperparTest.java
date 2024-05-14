@@ -12,7 +12,13 @@ class HyperparTest {
 
     @Test
     void test_CheckTrue(){
-        Hyperpar num = new Hyperpar(1846204284);
+        Hyperpar num = new Hyperpar(846204284);
+        assertTrue(num.esHyperPar());
+    }
+
+    @Test
+    void test_CheckTrue2(){
+        Hyperpar num = new Hyperpar(4000000);
         assertTrue(num.esHyperPar());
     }
 }
