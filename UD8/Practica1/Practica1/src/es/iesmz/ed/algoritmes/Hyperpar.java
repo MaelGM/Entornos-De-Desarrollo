@@ -19,7 +19,7 @@ public class Hyperpar {
     }
 
     /**
-     * Método que comprueba si el número es Hyperpar,<br> fragmentándolo y comprobando digito por digito
+     * Método que comprueba si el número es Hyperpar,<br> fragmentándolo y comprobando dígito por dígito
      *
      * @return Devuelve 'true' en caso de que si lo sea, y false en el contrario.
      */
