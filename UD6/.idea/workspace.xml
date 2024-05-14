@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f08099a7-f638-4c2e-9b66-7be292274e59" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica1/Practica1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica1/Practica1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica1/src/es/iesmz/EmpleadoBRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practica1/src/es/iesmz/EmpleadoBRTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica2/Practica2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica2/Practica2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica2/src/es/iesmz/tests/DiasLluvia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practica2/src/es/iesmz/tests/DiasLluvia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica3/Practica3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica3/Practica3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica3/src/es/iesmz/tests/CompteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practica3/src/es/iesmz/tests/CompteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prueba1/Prueba1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Prueba1/Prueba1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prueba1/src/CarteraTest/CarteraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prueba1/src/CarteraTest/CarteraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestsParametrizados/TestsParametrizados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestsParametrizados/TestsParametrizados.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ewV3vap0iB0vrzSIO6iccWSIu8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f08099a7-f638-4c2e-9b66-7be292274e59" name="Changes" comment="" />
+      <created>1712815438066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712815438066</updated>
+    </task>
+    <servers />
+  </component>
+</project>

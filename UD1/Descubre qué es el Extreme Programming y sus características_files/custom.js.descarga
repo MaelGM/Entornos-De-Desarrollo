@@ -1,0 +1,68 @@
+window.smdad = true;
+var smDisplayAdTimeout;
+
+if (smDisplayAdTimeout) {
+    clearTimeout(smDisplayAdTimeout);
+}
+
+function smDisplayAd(adpId, imageUrl, clickUrl, appUrl, smid, bId) {
+    var slot = document.getElementById('smb_' + adpId);
+    if (slot !== null && (!slot.childElementCount || slot.firstChild !== null && slot.firstChild.href !== clickUrl)) {
+        console.info('Displaying ad: ' + imageUrl);
+        var decodedClickUrl = encodeURI(clickUrl);
+        slot.innerHTML = '<a href="' + decodedClickUrl + '"><img style="max-width: 100%" border="0" src="' + imageUrl + '"/></a>';
+        smBannerDisplayed(appUrl, smid, bId, adpId);
+    } else if (window.smdad) {
+        smDisplayAdTimeout = setTimeout(function() {
+            smDisplayAd(adpId, imageUrl, clickUrl, appUrl, smid, bId);
+        }, 500);
+    }
+}
+function smHideAd(adpId) {
+    var slot = document.getElementById('smb_' + adpId);
+    if (slot !== null) {
+        console.info('Hiding ad: ' + adpId);
+        slot.innerHTML = '';
+    }
+}
+function smBannerDisplayed(appUrl, smid, bId, adpId) {
+    console.info('smBannerDisplayed');
+    var url = appUrl + '/dynamic/' + smid + '/bannerDisplay.htm?bannerId=' + bId + '&adPlacementId=' + adpId;
+    var xhr = createCORSRequest('POST', url);
+    if (!xhr) {
+        alert('CORS not supported');
+        return;
+    }
+    // Response handlers.
+    xhr.onload = function() {
+    };
+    xhr.onerror = function() {
+    };
+    xhr.send();
+    console.info('cross-origin request sent');
+}
+
+function createCORSRequest(method, url) {
+    var xhr = new XMLHttpRequest();
+    if ("withCredentials" in xhr) {
+        xhr.open(method, url, true);
+    } else if (typeof XDomainRequest != "undefined") {
+        xhr = new XDomainRequest();
+        xhr.open(method, url);
+    } else {
+        xhr = null;
+    }
+    return xhr;
+}
+
+setTimeout(function () {
+    smDisplayAd('2818', 'https://s3-eu-west-1.amazonaws.com/salesmanagoimg/d1p7pbijwc16ud6y/hr7z3u0d0ajoas8m/3pzm6ln153kq78mt.png', 'https://www.salesmanago.pl/dynamic/ads/d1p7pbijwc16ud6y/rd.htm?url=https%3A%2F%2Fwww.iebschool.com%2Frecursos%2F1001-herramientas-profesional-digital-volumen-1%2F%3Futm_source%3Dblog%26utm_medium%3Dbanner%26utm_campaign%3DR014&bid=3530&apid=2818', 'https://www.salesmanago.pl', 'd1p7pbijwc16ud6y', '3530');
+smDisplayAd('5425', 'https://s3-eu-west-1.amazonaws.com/salesmanagoimg/d1p7pbijwc16ud6y/hr7z3u0d0ajoas8m/82ykat5otc42l6gk.jpg', 'https://www.salesmanago.pl/dynamic/ads/d1p7pbijwc16ud6y/rd.htm?url=https%3A%2F%2Fwww.iebschool.com%2Frecursos%2Fperfiles-it-demandados%2F&bid=6590&apid=5425', 'https://www.salesmanago.pl', 'd1p7pbijwc16ud6y', '6590');
+
+}, 500);
+
+setTimeout(function() {
+    window.smdad = false;
+}, 1000 * 60);
+
+

@@ -1,0 +1,1 @@
+function toogleMorePages(el,ev){ev.preventDefault();if(el.innerHTML=='+'){el.innerHTML='-';document.getElementById(el.className).style.display='block'}else{el.innerHTML='+';document.getElementById(el.className).style.display='none'}}

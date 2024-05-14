@@ -1,0 +1,20 @@
+Cinematografia Entornos de Desarrollo
+
+Tablas:
+- Personas
+	- Director
+	- Actores
+	- Camaras
+	- Editores
+	- Musica / Efectos
+	- Otros
+
+- Estudio
+- Genero
+- Banda sonora
+- Material
+
+IDEAS: 
+Recaudacion
+Estreno
+ProyectosEnCurso
