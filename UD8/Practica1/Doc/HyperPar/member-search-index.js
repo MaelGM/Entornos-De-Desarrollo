@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"es.iesmz.ed.algoritmes","c":"Hyperpar","l":"esHyperPar()"},{"p":"es.iesmz.ed.algoritmes","c":"Hyperpar","l":"Hyperpar(long)","u":"%3Cinit%3E(long)"}];updateSearchResults();
